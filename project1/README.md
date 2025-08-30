@@ -1,30 +1,6 @@
 # P1 - Template da Primeira Entrega
 *2025.2 Ciência e Visualização de Dados em Saúde*
 
-# Estrutura de sua pasta de projeto
-
-A fim de uniformizar os repositórios de projetos da disciplina, os diretórios de seu repositório deverão ser nomeados conforme segue.
-
-~~~
-...
-│
-└── project1
-    |
-    ├── README.md   <- texto da Entrega 1 do projeto
-    |
-    └── assets      <- mídias usadas no projeto
-        ├── images  <- imagens usadas no texto do README.md
-        └── slides  <- slides da prévia (em PDF)
-~~~
-
-Na raiz da pasta `project1` deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
-
-Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Há partes do modelo a seguir que têm uma marcação específica indicando que **não devem ser literalmente transcritas**:
-
-Trecho entre `<...>` representa algo que deve ser substituído pelo indicado. Nesse caso, você não deve manter os símbolos `<...>`.
-> Parágrafo que aparece neste modo de citação representa algo que deve ser substituído pelo explicado.
-
-No modelo a seguir são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
 
 > # Modelo para Apresentação da Entrega 1 do Projeto (Arquivo README.md)
 
