@@ -38,8 +38,10 @@ Ainda aguardando acesso aos dados
 Ainda aguardando acesso aos dados
 
 # Metodologia
-> Esta seção evoluirá ao longo do projeto. Nesta primeira entrega, informe técnicas de Ciência de Redes que pretende explorar,
-> tais como: detecção de comunidades, análise de centralidade, predição de links, ou a combinação de uma ou mais técnicas. Descreva o que perguntas pretende endereçar cm a técnica escolhida.
+Técnicas de Ciência de Redes a serem exploradas:
+- Análise de Centralidade: Entender que genes coexpressos são mais ativos, ou se algum gene exclusivo das operárias tem destaque
+- Detecção de Comunidades: Identificar fatores em comum em genes coexpressos 
+
 
 # Ferramentas
 
