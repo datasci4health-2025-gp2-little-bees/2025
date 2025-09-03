@@ -2,8 +2,6 @@
 *2025.2 Ciência e Visualização de Dados em Saúde*
 
 
-> # Modelo para Apresentação da Entrega 1 do Projeto (Arquivo README.md)
-
 # Projeto Redes de Regulação Gênica na Plasticidade Fenotípica de Apis mellifera
 # Project Gene Regulatory Networks in the Phenotypic Plasticity of Apis mellifera
 
