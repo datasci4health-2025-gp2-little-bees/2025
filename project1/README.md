@@ -13,7 +13,7 @@
 
 # Slides
 
-[Slides para apresentação](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project1/assets/Disciplina%20ciência%20de%20dados-2.pdf)
+[Slides para apresentação]([https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project1/assets/Disciplina%20ciência%20de%20dados-2.pdf](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/35fc12f40dc252d7304fba0edef7d1e99284b65f/project1/assets/Disciplina%20cie%CC%82ncia%20de%20dados-2.pdf))
 
 # Fundamentação Teórica
 
