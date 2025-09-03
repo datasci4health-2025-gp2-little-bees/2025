@@ -4,12 +4,12 @@
 
 > # Modelo para Apresentação da Entrega 1 do Projeto (Arquivo README.md)
 
-# Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Projeto Redes de Regulação Gênica na Plasticidade Fenotípica de Apis mellifera
+# Project Gene Regulatory Networks in the Phenotypic Plasticity of Apis mellifera
 
 # Descrição Resumida do Projeto
 
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> Este projeto busca analisar a expressão diferencial de genes em Apis mellifera (abelha europeia), investigando a plasticidade fenotípica que diferencia operárias e rainhas. A partir de dados de RNA-seq, serão construídas redes de coexpressão e regulação gênica para identificar fatores de transcrição associados a genes coexpressos e exclusivos das operárias, de modo a compreender sua relação com a ativação dos ovários e a diferenciação de castas.
 
 # Slides
 
