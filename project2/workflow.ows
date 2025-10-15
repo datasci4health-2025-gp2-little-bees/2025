@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="int-targets-fts-worker" position="(97.0, 263.0)" />
+		<node id="1" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Genes Exclusivos Operarárias" position="(95.0, 80.0)" />
+		<node id="2" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="retirar 'LOC' dos nomes" position="(260.0, 81.0)" />
+		<node id="3" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Selecionar Coluna sem &quot;LOC&quot;" position="(425.0, 81.0)" />
+		<node id="4" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Filtragem -  Genes exclusivos Operárias" position="(634.0, 254.0)" />
+		<node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(830.0, 115.0)" />
+		<node id="6" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Selecionando apenas TFBS identificados" position="(808.0, 250.0)" />
+		<node id="7" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (2)" position="(1034.0, 156.0)" />
+		<node id="8" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Selecionando motivo e geneSymbol" position="(1030.0, 260.0)" />
+		<node id="9" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (3)" position="(1209.0, 193.0)" />
+		<node id="10" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="motivos-genes.csv" position="(1227.0, 314.0)" />
+		<node id="11" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Selecionando motivo e geneID" position="(875.0, 466.0)" />
+		<node id="12" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="motivos-genes-total.csv" position="(1121.0, 475.0)" />
+		<node id="13" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="GeneID para análise do DAVID" position="(772.0, 583.0)" />
+		<node id="14" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (5)" position="(953.0, 686.0)" />
+		<node id="15" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="geneID_david.csv" position="(994.0, 576.0)" />
+		<node id="16" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (4)" position="(1050.0, 381.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="4" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="6" sink_node_id="7" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="7" source_node_id="6" sink_node_id="8" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="8" source_node_id="8" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="8" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="10" source_node_id="4" sink_node_id="11" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="11" source_node_id="11" sink_node_id="12" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="12" source_node_id="4" sink_node_id="13" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="13" source_node_id="13" sink_node_id="14" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="14" source_node_id="13" sink_node_id="15" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="15" source_node_id="11" sink_node_id="16" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'int-targets-fts-worker.csv'}, {'encoding': 'utf-8', 'delimiter': ';', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/sahca/OneDrive/Área de Trabalho/ciencia de dados/projeto', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\xb4\x00\x00\x00\x8b\x00\x00\x06\x02\x00\x00\x02\x02\x00\x00\x04\xb4\x00\x00\x00\xa7\x00\x00\x06\x02\x00\x00\x02\x02\x00\x00\x00\x00\x02\x00\x00\x00\x07\x00\x00\x00\x04\xb4\x00\x00\x00\xa7\x00\x00\x06\x02\x00\x00\x02\x02', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'genes_exclusivos_ov_operarias.txt'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/sahca/OneDrive/Área de Trabalho/ciencia de dados/projeto', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\xb3\x00\x00\x00\xb1\x00\x00\x05\xca\x00\x00\x02\x08\x00\x00\x04\xb4\x00\x00\x00\xcf\x00\x00\x05\xc9\x00\x00\x02\x07\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04\xb4\x00\x00\x00\xcf\x00\x00\x05\xc9\x00\x00\x02\x07', '__version__': 3}</properties>
+		<properties node_id="2" format="pickle">gASVUwEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
+c2NyaXB0b3JzlF2UjChPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZmVhdHVyZWNvbnN0cnVjdG9ylIwQ
+U3RyaW5nRGVzY3JpcHRvcpSTlIwLR2VuZV9TeW1ib2yUjCVnZW5lc19leGNsdXNpdm9zX29wLnJl
+cGxhY2UoJ0xPQycsJycplIiHlIGUYYwXZXhwcmVzc2lvbnNfd2l0aF92YWx1ZXOUiYwTc2F2ZWRX
+aWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABKgAAAV0AAAVvAAADBAAAASoAAAF5AAAFbwAAAwQA
+AAAAAAAAAAcAAAABKgAAAXkAAAVvAAADBJSMC19fdmVyc2lvbl9flEsEjBBjb250ZXh0X3NldHRp
+bmdzlF2UdS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVGAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdUAAABu
+AAAELAAAAuEAAAHVAAAAigAABCwAAALhAAAAAAAAAAAHAAAAAdUAAACKAAAELAAAAuGUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiME2dlbmVzX2V4Y2x1c2l2b3Nfb3CUSwOGlIwJYXZhaWxhYmxllEsA
+hpSMC0dlbmVfU3ltYm9slEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOU
+fZSMBW1ldGFzlH2UKGgTSwNoF0sDdXViaAwpgZR9lChoD32UKIwRZG9tYWluX3JvbGVfaGludHOU
+fZQojBNnZW5lc19leGNsdXNpdm9zX29wlEsDhpSMBG1ldGGUSwCGlIwLZ2VuZV9zeW1ib2yUSwOG
+lGgnSwGGlHVK/v///4aUaAdLAXVoHH2UaB59lCiME2dlbmVzX2V4Y2x1c2l2b3Nfb3CUSwOMC2dl
+bmVfc3ltYm9slEsDdXViaAwpgZR9lChoD32UKGgRfZQoaBNLA4aUaBVLAIaUjAtHZW5lX3N5bWJv
+bJRLA4aUaBlLAIaUdUr+////hpRoB0sBdWgcfZRoHn2UKGglSwOMC0dlbmVfc3ltYm9slEsDdXVi
+aAwpgZR9lChoD32UKIwRZG9tYWluX3JvbGVfaGludHOUfZQoaC9LA4aUjAlhdmFpbGFibGWUSwCG
+lIwHZ2VuZV9pZJRLA4aUjARtZXRhlEsAhpR1Sv7///+GlGgHSwF1aBx9lGgefZQoaC9LA2hGSwN1
+dWJldS4=
+</properties>
+		<properties node_id="4" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x06\xff\x00\x00\x04_\x00\x00\x00\x00\x00\x00\x00;\x00\x00\x06\xff\x00\x00\x04_\x00\x00\x00\x00\x02\x00\x00\x00\x07\x00\x00\x00\x00\x00\x00\x00\x00;\x00\x00\x06\xff\x00\x00\x04_', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable, StringVariable\n\ndomain = Domain([], metas=[\n    StringVariable("Motivo"),\n    StringVariable("Modulo"),\n    StringVariable("Target_id"),\n    StringVariable("relacao_conserv_dmel"),\n    StringVariable("status"),\n    StringVariable("Gene_Symbol"),\n])\n\nt1 = in_datas[0]\nt2 = in_datas[1]\n# Extrai as colunas específicas da tabela de entrada\nmetas = [[\n    row["Motivo"],\n    row["Modulo"],\n    row["Target_id"],\n    row["relacao_conserv_dmel"],\n    row["status"],\n    row["Gene_Symbol"],\n] for row in t1]\n\n# Converte para NumPy array\nimport numpy as np\nmetas = np.array(metas, dtype=object)\n\n# Cria tabela de saída\nX_empty = np.empty((len(metas), 0))  # sem atributos numéricos\nout_data = Table.from_numpy(ddomain, X_empty, metas=metas)', 'filename': None}, {'name': 'Filter Genes', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, StringVariable\n\n# Define o domínio (mesmo que o original)\ndomain = Domain([], metas=[\n    StringVariable("Motivo"),\n    StringVariable("Modulo"),\n    StringVariable("Target_id"),\n    StringVariable("relacao_conserv_dmel"),\n    StringVariable("status"),\n    StringVariable("Gene_Symbol"),\n])\n\n# Entrada: t1 = tabela principal, t2 = tabela de referência\nt1 = in_datas[0]\nt2 = in_datas[1]\n\n# Conjunto com todos os Gene_Symbols de t2\ngene_symbols_ref = set(str(row["Gene_Symbol"]) for row in t2)\n\n# Filtra apenas as linhas de t1 cujo Gene_Symbol aparece em t2\nfiltered_rows = [\n    row for row in t1 if str(row["Gene_Symbol"]) in gene_symbols_ref\n]\n\n# Extrai apenas as colunas desejadas das linhas filtradas\nmetas = [[\n    row["Motivo"],\n    row["Modulo"],\n    row["Target_id"],\n    row["relacao_conserv_dmel"],\n    row["status"],\n    row["Gene_Symbol"],\n] for row in filtered_rows]\n\n# Converte para numpy array\nmetas = np.array(metas, dtype=object)\nX_empty = np.empty((len(metas), 0))  # sem atributos numéricos\n\n# Cria tabela de saída\nout_data = Table.from_numpy(domain, X_empty, metas=metas)\n', 'filename': None}], 'scriptText': 'import numpy as np\nfrom Orange.data import Table, Domain, StringVariable\n\n# Define o domínio (mesmo que o original)\ndomain = Domain([], metas=[\n    StringVariable("Motivo"),\n    StringVariable("Modulo"),\n    StringVariable("Target_id"),\n    StringVariable("relacao_conserv_dmel"),\n    StringVariable("status"),\n    StringVariable("Gene_Symbol"),\n])\n\n# Entrada: t1 = tabela principal, t2 = tabela de referência\nt1 = in_datas[0]\nt2 = in_datas[1]\n\n# Conjunto com todos os Gene_Symbols de t2\ngene_symbols_ref = set(str(row["Gene_Symbol"]) for row in t2)\n\n# Filtra apenas as linhas de t1 cujo Gene_Symbol aparece em t2\nfiltered_rows = [\n    row for row in t1 if str(row["Gene_Symbol"]) in gene_symbols_ref\n]\n\n# Extrai apenas as colunas desejadas das linhas filtradas\nmetas = [[\n    row["Motivo"],\n    row["Modulo"],\n    row["Target_id"],\n    row["relacao_conserv_dmel"],\n    row["status"],\n    row["Gene_Symbol"],\n] for row in filtered_rows]\n\n# Converte para numpy array\nmetas = np.array(metas, dtype=object)\nX_empty = np.empty((len(metas), 0))  # sem atributos numéricos\n\n# Cria tabela de saída\nout_data = Table.from_numpy(domain, X_empty, metas=metas)\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa8\x00\x00\x00h\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf9\x00\x00\x06\x00\x00\x00\x030\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/\x00\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [11], 'columns': [0, 1, 2, 3, 4, 5]}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASVwwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAACkwAAAQUAAATsAAADFgAAApQAAAEjAAAE6wAAAxUAAAAAAAAAAAYAAAAClAAAASMA
+AATrAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojAZzdGF0dXOUSwNLAIwRVEZCU19pZGVudGlmaWNhZG+UhZR0
+lGFoCEsCdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQojAZNb3Rpdm+USwOMBk1vZHVsb5RLA4wJ
+VGFyZ2V0X2lklEsDjBRyZWxhY2FvX2NvbnNlcnZfZG1lbJRLA2gUSwOMC0dlbmVfU3ltYm9slEsD
+dXViYXUu
+</properties>
+		<properties node_id="7" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf9\x00\x00\x06\x00\x00\x00\x030\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/\x00\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [9], 'columns': [0, 1, 2, 3, 4, 5]}, 'stored_sort': [('Motivo', 1)], '__version__': 1}</properties>
+		<properties node_id="8" format="pickle">gASV/gEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAA3UAAABw
+AAAFzgAAAuYAAAN2AAAAjgAABc0AAALlAAAAAAAAAAAGAAAAA3YAAACOAAAFzQAAAuWUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwGc3RhdHVzlEsDhpSMCWF2YWlsYWJsZZRLAIaUjBRyZWxhY2FvX2Nv
+bnNlcnZfZG1lbJRLA4aUaBVLAYaUjAZNb2R1bG+USwOGlGgVSwKGlIwJVGFyZ2V0X2lklEsDhpRo
+FUsDhpSMBk1vdGl2b5RLA4aUjARtZXRhlEsAhpSMC0dlbmVfU3ltYm9slEsDhpRoIksBhpR1Sv7/
+//+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9lChoIEsDaBpLA2gdSwNoF0sDaBNLA2gk
+SwN1dWJhdS4=
+</properties>
+		<properties node_id="9" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf9\x00\x00\x06\x00\x00\x00\x030\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/\x00\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\xff\x00\x00\x03/', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [9], 'columns': [0, 1]}, 'stored_sort': [('Motivo', 1)], '__version__': 1}</properties>
+		<properties node_id="10" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04$\x00\x00\x01@\x00\x00\x05&amp;\x00\x00\x01\xe3\x00\x00\x04%\x00\x00\x01^\x00\x00\x05%\x00\x00\x01\xe2\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04%\x00\x00\x01^\x00\x00\x05%\x00\x00\x01\xe2', 'stored_name': 'motivos-genes.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="11" format="pickle">gASV/gEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdQAAABs
+AAAELQAAAuIAAAHVAAAAigAABCwAAALhAAAAAAAAAAAGAAAAAdUAAACKAAAELAAAAuGUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwUcmVsYWNhb19jb25zZXJ2X2RtZWyUSwOGlIwJYXZhaWxhYmxllEsA
+hpSMBnN0YXR1c5RLA4aUaBVLAYaUjAtHZW5lX1N5bWJvbJRLA4aUaBVLAoaUjAZNb2R1bG+USwOG
+lGgVSwOGlIwGTW90aXZvlEsDhpSMBG1ldGGUSwCGlIwJVGFyZ2V0X2lklEsDhpRoIksBhpR1Sv7/
+//+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9lChoIEsDaB1LA2gkSwNoE0sDaBdLA2ga
+SwN1dWJhdS4=
+</properties>
+		<properties node_id="12" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04$\x00\x00\x01@\x00\x00\x05C\x00\x00\x01\xe3\x00\x00\x04%\x00\x00\x01^\x00\x00\x05B\x00\x00\x01\xe2\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04%\x00\x00\x01^\x00\x00\x05B\x00\x00\x01\xe2', 'stored_name': 'motivos-genes-total.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="13" format="pickle">gASV/gEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdQAAABs
+AAAELQAAAuIAAAHVAAAAigAABCwAAALhAAAAAAAAAAAGAAAAAdUAAACKAAAELAAAAuGUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwLR2VuZV9TeW1ib2yUSwOGlIwJYXZhaWxhYmxllEsAhpSMFHJlbGFj
+YW9fY29uc2Vydl9kbWVslEsDhpRoFUsBhpSMBnN0YXR1c5RLA4aUaBVLAoaUjAZNb2R1bG+USwOG
+lGgVSwOGlIwGTW90aXZvlEsDhpRoFUsEhpSMCVRhcmdldF9pZJRLA4aUjARtZXRhlEsAhpR1Sv7/
+//+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9lChoIEsDaB1LA2gjSwNoF0sDaBpLA2gT
+SwN1dWJhdS4=
+</properties>
+		<properties node_id="14" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\r\x00\x00\x00\x10\x00\x00\x04\xf5\x00\x00\x03?\x00\x00\x01\x0e\x00\x00\x00.\x00\x00\x04\xf4\x00\x00\x03&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x0e\x00\x00\x00.\x00\x00\x04\xf4\x00\x00\x03&gt;', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="15" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04$\x00\x00\x01@\x00\x00\x05\x1f\x00\x00\x01\xe3\x00\x00\x04%\x00\x00\x01^\x00\x00\x05\x1e\x00\x00\x01\xe2\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04%\x00\x00\x01^\x00\x00\x05\x1e\x00\x00\x01\xe2', 'stored_name': 'geneID_david.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="16" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\r\x00\x00\x00\x10\x00\x00\x04\xf5\x00\x00\x03?\x00\x00\x01\x0e\x00\x00\x00.\x00\x00\x04\xf4\x00\x00\x03&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x0e\x00\x00\x00.\x00\x00\x04\xf4\x00\x00\x03&gt;', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
