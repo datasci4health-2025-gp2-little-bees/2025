@@ -97,7 +97,18 @@ plt.show();
 
 # Ferramentas
 
-> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas.
+O desenvolvimento do projeto envolveu um conjunto diversificado de ferramentas voltadas à mineração de dados, análise de redes biológicas, enriquecimento funcional e consulta de bases especializadas em biologia molecular. Cada ferramenta contribuiu para uma etapa específica do fluxo de trabalho, desde a preparação inicial dos dados até a contextualização biológica dos achados. A tabela abaixo sumariza as ferramentas utilizadas, juntamente com o objetivo de cada uma para o projeto.
+
+| Ferramenta         | Categoria                       | Finalidade no Projeto                                                                                                       |
+| ------------------ | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Orange Data Mining | Mineração de dados              | Tratamento dos dados e criação das redes.                                                                                   |
+| Cytoscape          | Visualização e análise de redes | Cálculo de métricas e visualização dos grafos.                                                                              |
+| DAVID              | Enriquecimento funcional        | Identificação do Processo Biológico e outros termos GO                                                                      |
+| OrthoDB            | Base de ortólogos               | Extração de ortólogos humanos dos genes encontrados                                                                         |
+| KEGG               | Base de vias de sinalização     | Consulta e identificação de vias metabólicas e funcionais associadas aos genes analisados                                   |
+| PubMed             | Base de artigos científicos     | Consulta de literatura para identificar estudos relacionados aos genes analisados e possibilitar interpretações biológicas. |
+
+Em conjunto, essas ferramentas permitiram estruturar, analisar e interpretar os dados de forma coerente ao longo das etapas do projeto. Enquanto o Orange e o Cytoscape estruturaram e exploraram as redes geradas, bases como DAVID, OrthoDB, KEGG e PubMed forneceram o suporte biológico necessário para contextualizar os achados e enriquecer a interpretação das relações entre os genes estudados.
 
 # Resultados
 
