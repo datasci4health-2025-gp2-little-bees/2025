@@ -34,8 +34,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Indicação (bastante resumida) dos resultados alcançados
 
 # Slides
-
-> Coloque aqui o link para o PDF da apresentação da parte 3.
+[Link para slides da apresentação final](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/assets/slides/Bees%20-%20Apresentação%20Final.pdf)
 
 # Fundamentação Teórica
 
