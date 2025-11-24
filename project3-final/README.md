@@ -175,7 +175,7 @@ O citocromo P450 diz respeito à uma família de enzimas responsáveis por metab
 
 # Referências Bibliográficas
 
-> REHAN et al. Conserved Genes Underlie Phenotypic Plasticity in an Incipiently Social Bee. Genome Biology and evolution, v. 10, n. 10, p. 2749. https://doi.org/10.1093/gbe/evy212
+REHAN et al. Conserved Genes Underlie Phenotypic Plasticity in an Incipiently Social Bee. Genome Biology and evolution, v. 10, n. 10, p. 2749. https://doi.org/10.1093/gbe/evy212
 
 WILSON, E. O. The insect societies. The insect societies., 1971
 
