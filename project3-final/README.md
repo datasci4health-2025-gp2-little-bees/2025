@@ -17,22 +17,6 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Descrição Resumida do Projeto
 
-> Descrição resumida do tema do projeto. Sugestão de roteiro (cada item tipicamente tratado em uma ou poucas frases):
->
-> Contextualização do projeto
->
-> Caracterização do problema
->
-> Motivação
->
-> Relevância
->
-> Trabalhos relacionados
->
-> Indicação (bastante resumida) da análise proposta
->
-> Indicação (bastante resumida) dos resultados alcançados
-
 A diferenciação entre rainhas e operárias em _Apis mellifera_ é influenciada por fatores nutricionais, genéticos e epigenéticos, que moldam padrões distintos de expressão gênica durante o desenvolvimento larval. Entre esses fatores, destaca-se o papel da alimentação, que direciona o desenvolvimento das castas e resulta em diferenças estruturais e funcionais, como o número e a atividade dos ovaríolos. Durante esse processo, mais de duzentos genes e diversas vias de sinalização são modulados, acompanhados por alterações epigenéticas que contribuem para a formação dos programas de desenvolvimento específicos.
 
 Este projeto investigou possíveis relações entre os genes expressos exclusivamente nos ovários larvais de operárias e seu potencial de ativação ovariana na fase adulta, especialmente na ausência da rainha. A motivação central foi compreender como esses genes podem estar associados à plasticidade fenotípica das células e à capacidade de diferenciação.
