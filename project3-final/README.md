@@ -89,7 +89,7 @@ geneID_david.csv | http://base2.org/ | Lista com 15 Gene IDs para enriquecimento
 
 O modelo lógico apresentado ilustra o fluxo completo desenvolvido ao longo do estudo, destacando as etapas e ferramentas utilizadas durante o processo.
 
-![Modelo Lógico de Estudo](project3-final/assets/images/modelo-logico-estudo.jpg)
+![Modelo Lógico de Estudo](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/assets/images/modelo-logico-estudo.jpg)
 
 Foram geradas duas redes gênicas distintas: a primeira composta por 76 interações entre genes exclusivos das operárias e seus respectivos motivos (motifs); e a segunda contendo somente as interações para genes em que foi possível identificar fatores de transcrição (TFBs) relacionados.
 
@@ -97,7 +97,7 @@ O modelo lógico apresentado a seguir demonstra como esses dados foram organizad
 
 Nessa representação, os nós ovais correspondem aos genes (identificados pelo geneID) e aos motivos associados a eles, representados por retângulos. Por meio da ferramenta Cytoscape, esses nós foram enriquecidos com os arquivos estruturados e gerados durante o estudo, otimizando o processo de análise das redes.
 
-![Modelo Lógico de Grafos](project3-final/assets/images/modelo-logico-grafos.jpg)
+![Modelo Lógico de Grafos](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/assets/images/modelo-logico-grafos.jpg)
 
 
 ## Integração entre Bases
