@@ -33,6 +33,16 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 >
 > Indicação (bastante resumida) dos resultados alcançados
 
+A diferenciação entre rainhas e operárias em _Apis mellifera_ é influenciada por fatores nutricionais, genéticos e epigenéticos, que moldam padrões distintos de expressão gênica durante o desenvolvimento larval. Entre esses fatores, destaca-se o papel da alimentação, que direciona o desenvolvimento das castas e resulta em diferenças estruturais e funcionais, como o número e a atividade dos ovaríolos. Durante esse processo, mais de duzentos genes e diversas vias de sinalização são modulados, acompanhados por alterações epigenéticas que contribuem para a formação dos programas de desenvolvimento específicos.
+
+Este projeto investigou possíveis relações entre os genes expressos exclusivamente nos ovários larvais de operárias e seu potencial de ativação ovariana na fase adulta, especialmente na ausência da rainha. A motivação central foi compreender como esses genes podem estar associados à plasticidade fenotípica das células e à capacidade de diferenciação.
+
+A análise integrou técnicas de ciência de redes, enriquecimento funcional e mineração de textos científicos. Os dados foram estruturados e filtrados por meio de workflows no Orange Data Mining, enriquecidos com ferramentas como DAVID, OrthoDB e KEGG, e utilizados para construção e visualização de redes gênicas no Cytoscape. A literatura consultada ajudou a contextualizar os achados, especialmente em relação ao citocromo P450.
+
+Os resultados destacaram a presença do gene CYP6AQ1 e do composto quercetina, ambos já relacionados na literatura à diferenciação e ativação das gônadas e à modulação da inibição ovariana pelo feromônio mandibular da rainha. Esses elementos mostraram-se consistentes com as redes construídas e com os padrões observados ao longo das análises.
+
+De forma geral, o projeto estruturou um fluxo integrado para explorar mecanismos associados à plasticidade fenotípica em Apis mellifera, combinando dados biológicos, redes gênicas e evidências textuais para apoiar a interpretação das possíveis funções dos genes exclusivos das operárias.
+
 # Slides
 [Link para slides da apresentação final](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/assets/slides/Bees%20-%20Apresentação%20Final.pdf)
 
