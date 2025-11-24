@@ -1,0 +1,26 @@
+gene_id,group,link-group,gene,link-gene,link-kegg,PubMed
+406148,1693460at33208,https://www.orthodb.org/?query=1693460at33208,CHRNA7,https://www.orthodb.org/?gene=9606_0:000b65,https://www.genome.jp/entry/K04809,https://pubmed.ncbi.nlm.nih.gov/?term=nicotinic+acetylcholine+AND+apis+mellifera
+406148,1693460at33208,https://www.orthodb.org/?query=1693460at33208,CHRNA9,https://www.orthodb.org/?gene=9606_0:0033ee,https://www.genome.jp/entry/K04810,https://pubmed.ncbi.nlm.nih.gov/?term=nicotinic+acetylcholine+AND+apis+mellifera
+406148,1693460at33208,https://www.orthodb.org/?query=1693460at33208,NACHR alpha-10,https://www.orthodb.org/?gene=9606_0:001076,https://www.genome.jp/entry/bmor:100126175,https://pubmed.ncbi.nlm.nih.gov/?term=nicotinic+acetylcholine+AND+apis+mellifera
+409771,1708765at33208,https://www.orthodb.org/?query=1708765at33208,TRAAK,https://www.orthodb.org/?gene=9606_0:0029a0,https://www.genome.jp/entry/hsa:50801,https://pubmed.ncbi.nlm.nih.gov/?term=potassium+channel++AND+apis+mellifera
+409771,1708765at33208,https://www.orthodb.org/?query=1708765at33208,C2orf69,"https://www.orthodb.org/?ncbi=409771#:~:text=2-,C2orf69,-%5B28301546%3A28346224%5D(%2D)",https://www.genome.jp/entry/K28271,https://pubmed.ncbi.nlm.nih.gov/?term=potassium+channel++AND+apis+mellifera
+409771,1708765at33208,https://www.orthodb.org/?query=1708765at33208,TALK-1,https://www.orthodb.org/?gene=9606_0:0019ba,https://www.genome.jp/entry/hsa:83795,https://pubmed.ncbi.nlm.nih.gov/?term=potassium+channel++AND+apis+mellifera
+724767,1846859at33208,https://www.orthodb.org/?query=1846859at33208,Beta-ENaC,https://www.orthodb.org/?gene=9606_0:002b1a,https://www.genome.jp/entry/hsa:6338,https://pubmed.ncbi.nlm.nih.gov/?term=sodium+channel+protein+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",CYP3A43,https://www.orthodb.org/?gene=9606_0:0014d3,https://www.genome.jp/entry/K17692,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",CYP3A5,https://www.orthodb.org/?gene=9606_0:0014ee,https://www.genome.jp/entry/K17690,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",CYP3A7-CYP3A51P,https://www.orthodb.org/?gene=9606_0:00150c,https://www.genome.jp/entry/hsa:100861540,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",CYP3A4,https://www.orthodb.org/?gene=9606_0:00155a,https://www.genome.jp/entry/K17689,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",TXA synthase,https://www.orthodb.org/?gene=9606_0:00396a,https://www.genome.jp/entry/hsa:6916,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+725159,1673616at33208,"https://www.orthodb.org/?ncbi=725159#:~:text=Homo%20sapiens%20%2D%20group-,1673616at33208,-at%20Metazoa%20level",CYP3A7,https://www.orthodb.org/?gene=9606_0:001477,https://www.genome.jp/entry/K17691,https://pubmed.ncbi.nlm.nih.gov/?term=probable+cytochrome+P450+AND+apis+mellifera
+100578498,1908399at33208,https://www.orthodb.org/?query=1908399at33208,MCTP2,https://www.orthodb.org/?gene=9606_0:002f1a,https://www.genome.jp/entry/hsa:55784,-
+100578498,1908399at33208,https://www.orthodb.org/?query=1908399at33208,MCTP1,https://www.orthodb.org/?gene=9606_0:003fc1,https://www.genome.jp/entry/hsa:79772,-
+100578990,1957300at33208,https://www.orthodb.org/?query=1957300at33208,DNAI2,https://www.orthodb.org/?gene=9606_0:003642,https://www.genome.jp/entry/K11143,https://pubmed.ncbi.nlm.nih.gov/?term=dynein+AND+apis+mellifera
+726950,none,none,none,none,none,
+727197,none,none,none,none,none,
+413109,none,none,none,none,none,
+552320,none,none,none,none,none,
+409674,none,none,none,none,none,
+102656196,none,none,none,none,none,
+113218626,none,none,none,none,none,
+113218954,none,none,none,none,none,
+113219057,none,none,none,none,none,
