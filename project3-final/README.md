@@ -1,5 +1,5 @@
-# Projeto Redes de Regulação Gênica na Plasticidade Fenotípica de Apis mellifera
-## Project Gene Regulatory Networks in the Phenotypic Plasticity of Apis mellifera
+# Projeto Redes de Regulação Gênica na Plasticidade Fenotípica de _Apis mellifera_
+## Project Gene Regulatory Networks in the Phenotypic Plasticity of _Apis mellifera_
 
 # Equipe
 > |Nome  | RA | Especialização|
@@ -7,10 +7,9 @@
 > | Arimã Batista  | 194347  | Computação |
 > | Diego Monego  | 291074  | Computação |
 > | Jaqueline Aguilar | 298311  | Computação |
-> | Sarah Calado | 29582  | Biologia|
-> | Vitor Klipel | 289610  | Biologia|
-> | Victor Machado| 299880  | Computação|
-
+> | Sarah Calado | 29582  | Biologia |
+> | Vitor Klipel | 289610  | Biologia |
+> | Victor Machado| 299880  | Computação |
 
 # Apresentação
 
@@ -39,32 +38,31 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Fundamentação Teórica
 
-Na natureza, existe uma ampla diversidade social no grupo das abelhas, que inclui tanto espécies solitárias quanto espécies altamente sociais (eussociais), como a abelha Apis melífera (REHAN et al., 2018). Essa elevada sociabilidade resulta em uma organização complexa das colônias, caracterizada pela divisão do trabalho, cuidado cooperativo da prole e sobreposição de gerações, com rainhas responsáveis pela reprodução e operárias desempenhando tarefas dentro e fora do ninho (WILSON, 1971).
+Na natureza, existe uma ampla diversidade social no grupo das abelhas, que inclui tanto espécies solitárias quanto espécies altamente sociais (eussociais), como a abelha _Apis melífera_ (REHAN et al., 2018). Essa elevada sociabilidade resulta em uma organização complexa das colônias, caracterizada pela divisão do trabalho, cuidado cooperativo da prole e sobreposição de gerações, com rainhas responsáveis pela reprodução e operárias desempenhando tarefas dentro e fora do ninho (WILSON, 1971).
 
-Em Apis mellifera, a diferença entre rainhas e operárias é determinada pela alimentação larval: larvas que recebem geleia real durante todo o desenvolvimento tornam-se rainhas, enquanto as demais, alimentadas com uma mistura de mel, pólen e geleia real, desenvolvem-se como operárias (HOOVER et al, 2003). Essa diferença nutricional gera o dimorfismo entre as castas: rainhas são férteis e possuem centenas de ovaríolos, enquanto operárias apresentam poucos e geralmente inativos (HARTFELDER et al., 2018).
+Em _Apis mellifera_, a diferença entre rainhas e operárias é determinada pela alimentação larval: larvas que recebem geleia real durante todo o desenvolvimento tornam-se rainhas, enquanto as demais, alimentadas com uma mistura de mel, pólen e geleia real, desenvolvem-se como operárias (HOOVER et al, 2003). Essa diferença nutricional gera o dimorfismo entre as castas: rainhas são férteis e possuem centenas de ovaríolos, enquanto operárias apresentam poucos e geralmente inativos (HARTFELDER et al., 2018).
 
 A diferenciação ocorre ainda no período larval, quando grandes diferenças na expressão gênica se estabelecem entre rainhas e operárias, envolvendo mais de duzentos genes e diversas vias de sinalização sensíveis ao estado nutricional (VOJVODIC et al., 2015). Além disso, alterações epigenéticas, como metilação do DNA e modificações da cromatina, também participam da regulação dos programas de desenvolvimento de cada casta (FORET et al., 2012).
 
-Assim, a formação de rainhas e operárias em Apis mellifera é um processo complexo, determinado pela interação entre fatores nutricionais, genéticos e epigenéticos. Nesse contexto, este trabalho pode contribuir para o estudo dos mecanismos de plasticidade fenotípica e para o avanço do conhecimento sobre a biologia das abelhas, o que é essencial para fortalecer ações de preservação e incentivar programas de manejo e manutenção das espécies, considerando sua grande importância ecológica, econômica e ambiental.
+Assim, a formação de rainhas e operárias em _Apis mellifer_a é um processo complexo, determinado pela interação entre fatores nutricionais, genéticos e epigenéticos. Nesse contexto, este trabalho pode contribuir para o estudo dos mecanismos de plasticidade fenotípica e para o avanço do conhecimento sobre a biologia das abelhas, o que é essencial para fortalecer ações de preservação e incentivar programas de manejo e manutenção das espécies, considerando sua grande importância ecológica, econômica e ambiental.
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa (revisadas e atualizadas) que o projeto responde ou hipóteses que foram avaliadas, enunciadas de maneira objetiva e verificável.
-> Apresente aqui como o projeto ajudou a responder as perguntas de pesquisa.
+
+O presente trabalho buscou identificar possíveis relações entre os genes expressos exclusivamente nos ovários larvais das operárias e seu potencial de ativar os ovários quando adulta e na ausência da rainha, relacionando-os com a plasticidade fenotípica das células e sua capacidade de se diferenciar.
+
+Com o desenvolvimento das atividades, foi possível encontrar a presença de um tipo de citocromo P450 (CYP6AQ1) e o flavonóide quercetina. Estes já foram descritos anteriormente na diferenciação e ativação das gônadas das abelhas e como regulador da inibição dos ovários provocada pelo ferormônio mandibular da rainha.
 
 # Metodologia
 
-Este projeto adota uma abordagem baseada em técnicas de Ciência de Redes para analisar a estrutura, dinâmica e padrões emergentes da rede biológica em estudo. A metodologia compreende desde a construção e pré-processamento das redes até a aplicação de métricas específicas. Cada técnica é escolhida para responder a questões específicas relacionadas à organização e funcionalidade dos genes expressos durante o desenvolvimento larval tardio de Apis mellifera, com ênfase na diferenciação entre ovários de operárias e rainhas.
+Este projeto adota uma abordagem baseada em técnicas de Ciência de Redes para analisar a estrutura, dinâmica e padrões emergentes da rede biológica em estudo. A metodologia compreende desde a construção e pré-processamento das redes até a aplicação de métricas específicas. Cada técnica é escolhida para responder a questões específicas relacionadas à organização e funcionalidade dos genes expressos durante o desenvolvimento larval tardio de _Apis mellifera_, com ênfase na diferenciação entre ovários de operárias e rainhas.
 
 Para identificar os genes expressos exclusivamente nos ovários de operárias nesse estágio, foi desenvolvido um workflow na ferramenta Orange Data Mining, que possibilita o pré-processamento e a integração dos dados genômicos. Complementarmente, utilizaram-se ferramentas especializadas, como DAVID, OrthoDB e KEGG, para análise de enriquecimento funcional dos genes, permitindo identificar processos biológicos relevantes associados aos conjuntos gênicos selecionados.
 
 Com os dados estruturados, a ferramenta Cytoscape foi empregada para a geração e visualização das redes gênicas. A análise combinada dessas redes evidenciou vias metabólicas e proteínas de alto valor funcional, integrando ainda a análise e mineração de textos científicos para melhor compreensão da biologia molecular da espécie.
 
-
-
 ## Bases de Dados e Evolução
 
-As bases de dados iniciais utilizadas neste estudo foram originadas da tese intitulada "Reconstrução das Redes Cis-Reguladoras do Desenvolvimento de Ovários de Operárias e Rainhas de Abelhas Melíferas", de autoria de Izabella Cristina Silva, e cedidas pelo grupo de pesquisa ()[nome_fornecedor]. Os dados foram disponibilizados em formato de planilhas eletrônicas.
-
+As bases de dados iniciais utilizadas neste estudo foram originadas da tese intitulada "Reconstrução das Redes Cis-Reguladoras do Desenvolvimento de Ovários de Operárias e Rainhas de Abelhas Melíferas", de autoria de Izabella Cristina Silva, e cedidas pelo grupo de pesquisa (Laboratório de Genômica Comparativa do Desenvolvimento). Os dados foram disponibilizados em formato de planilhas eletrônicas.
 
 Base de Dados | Fonte | Resumo descritivo
 ----- | ----- | -----
@@ -73,7 +71,7 @@ int-targets-fts-worker.csv | http://base2.org/ | Breve resumo (duas ou três lin
 
 A base *genes_exclusivos_ov_operarias.txt* apresentou uma listagem de 3.449 genes exclusivos das operárias, ou seja, genes ausentes na expressão ovariana das rainhas. Durante a análise, identificou-se que alguns símbolos genéticos possuíam o sufixo “LOC”, o que dificultava a comparação entre bases. Por esse motivo, procedeu-se à remoção desses sufixos para uniformizar os símbolos gênicos entre as bases.
 
-A base *int-targets-fts-worker.csv*, com seus 1.463 registros, apresentou múltiplas entradas para diferentes símbolos genéticos. Cada registro contém o identificador do gene (Gene ID), símbolo (Gene Symbol), motivos (motifs), módulos associados (identificados por meio do pacote WGCNA) e a presença de sítios de ligação para fatores de transcrição (TFBSs), detectados pelos algoritmos HOMER Denovo e HOMER compare.
+A base *int-targets-fts-worker.csv*, com seus 1.463 registros, apresentou múltiplas entradas para diferentes símbolos genéticos. Cada registro contém o identificador do gene (Gene ID), símbolo (Gene Symbol), motivos (motifs), módulos associados (identificados por meio do pacote WGCNA) e a presença de sítios de ligação para fatores de transcrição (TFBSs), detectados pelos algoritmos HOMER denovo e HOMER compare.
 
 A partir da lista da base *genes_exclusivos_ov_operarias.txt*, foi realizada a filtragem dos genes exclusivos das operárias presentes na base *int-targets-fts-worker.csv*, resultando na criação de três bases derivadas para análises específicas:
 
@@ -82,8 +80,6 @@ Base de Dados | Fonte | Resumo descritivo
 motivos-genes-total.csv | http://base1.org/ | 76 registros estruturados em Genes symbol e motivo (motif).
 motivos-genes.csv | http://base2.org/ | 21 registros com Genes symbol e motivo (motif) com TFBs identificados.
 geneID_david.csv | http://base2.org/ | Lista com 15 Gene IDs para enriquecimento via DAVID.
-
-
 
 ## Modelo Lógico
 
@@ -99,7 +95,6 @@ Nessa representação, os nós ovais correspondem aos genes (identificados pelo 
 
 ![Modelo Lógico de Grafos](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/assets/images/modelo-logico-grafos.jpg)
 
-
 ## Integração entre Bases
 
 A integração das bases de dados neste estudo apresentou diversos desafios, principalmente relacionados à uniformização de nomenclaturas e registros entre as fontes distintas. Para superar essas questões, foram desenvolvidos algoritmos específicos de filtragem, implementados por meio da ferramenta Orange Data Mining, além de processos manuais para identificação e correção de inconsistências nos dados.
@@ -107,7 +102,6 @@ A integração das bases de dados neste estudo apresentou diversos desafios, pri
 O workflow (data-structure.ows) [localização no rep] documenta detalhadamente o processo de estruturação dos dados iniciais, incluindo a identificação dos genes exclusivos das operárias e a organização para a criação das redes gênicas. Este workflow também incorpora os dados provenientes da ferramenta DAVID, utilizados para o enriquecimento funcional da rede gênica.
 
 Adicionalmente, o workflow (paper-analysis.ows) [localização no repo] resume o processo de estruturação e aplicação de técnicas para o reconhecimento de padrões para análise e mineração de texto em artigos científicos. Essa etapa teve o objetivo de validar as descobertas da análise de redes, consolidando os resultados obtidos.
-
 
 ## Análises Realizadas
 
@@ -129,12 +123,11 @@ plt.show();
 
 Inicialmente, o estudo focava exclusivamente na criação de modelos lógicos e no seu enriquecimento por meio de anotações extraídas com a ferramenta DAVID. Contudo, durante o desenvolvimento, verificou-se que alguns genes não foram identificados pela ferramenta, e outros não puderam ser caracterizados adequadamente. Essa limitação no mapeamento e enriquecimento poderia comprometer a abrangência das interações relevantes para as análises.
 
-Para contornar essa dificuldade, foi realizado um mapeamento manual dos ortólogos humanos para os 15 genes de Apis mellifera identificados. A busca desses ortólogos foi efetuada na ferramenta OrthoDB, empregando os gene IDs como parâmetro. Os ortólogos humanos identificados foram posteriormente submetidos à análise na ferramenta KEGG, com o objetivo de identificar as vias biológicas associadas, gerando o arquivo (orthoDB_gene.csv) [localização arquivo repo] para enriquecimento das redes gênicas.
+Para contornar essa dificuldade, foi realizado um mapeamento manual dos ortólogos humanos para os 15 genes de _Apis mellifera_ identificados. A busca desses ortólogos foi efetuada na ferramenta OrthoDB, empregando os gene IDs como parâmetro. Os ortólogos humanos identificados foram posteriormente submetidos à análise na ferramenta KEGG, com o objetivo de identificar as vias biológicas associadas, gerando o arquivo (orthoDB_gene.csv) [localização arquivo repo] para enriquecimento das redes gênicas.
 
-Além disso, foi implementada uma etapa de análise e mineração de textos científicos focada em artigos que abordam a atividade do citocromo P450, uma proteína destacada nos modelos gerados e relacionada à diferenciação de castas e estágios de desenvolvimento em Apis mellifera. Ao todo, oito artigos foram selecionados após análise criteriosa. O workflow (paper-analysis.ows) [localização no repo] sintetiza o processo de estruturação e aplicação das técnicas para reconhecimento de padrões e geração dos resultados.
+Além disso, foi implementada uma etapa de análise e mineração de textos científicos focada em artigos que abordam a atividade do citocromo P450, uma proteína destacada nos modelos gerados e relacionada à diferenciação de castas e estágios de desenvolvimento em _Apis mellifera_. Ao todo, oito artigos foram selecionados após análise criteriosa. O workflow (paper-analysis.ows) [localização no repo] sintetiza o processo de estruturação e aplicação das técnicas para reconhecimento de padrões e geração dos resultados.
 
 O objetivo dessa etapa foi estabelecer um paralelo entre o conhecimento presente na literatura científica e as descobertas obtidas pela equipe de pesquisa, fortalecendo a validação dos resultados.
-
 
 # Ferramentas
 
@@ -154,7 +147,6 @@ Em conjunto, essas ferramentas permitiram estruturar, analisar e interpretar os 
 # Resultados
 
 A análise dos ortólogos humanos revelou três vias e proteínas de maior relevância: citocromos P450, receptores colinérgicos nicotínicos e dineínas axonemais. Entre essas, a família citocromo P450 apresentou os padrões mais consistentes e integrados com os demais resultados obtidos. Por esse motivo, ela foi selecionada como foco das análises subsequentes, incluindo a etapa de construção e exploração das redes de textos.
-
 
 # Discussão
 
@@ -181,7 +173,7 @@ WILSON, E. O. The insect societies. The insect societies., 1971
 
 HOOVER et al. The effect of queen pheromones on worker honey bee ovary development. Naturwissenschaften, v. 90, n. 10, p. 4773480, 18 out. 2003. DisponÌvel em: https://doi.org/10.1007/s00114-003-0462-z.
 
-HARTFELDER et al. The ovary and its genes4developmental processes underlying the establishment and function of a highly divergent reproductive system in the female castes of the honey bee, Apis mellifera. Apidologie, v. 49, n. 1, p. 49370, 1 fev. 2018. DisponÌvel em: https://doi.org/10.1007/s13592-017-0548-9.
+HARTFELDER et al. The ovary and its genes4developmental processes underlying the establishment and function of a highly divergent reproductive system in the female castes of the honey bee, _Apis mellifera_. Apidologie, v. 49, n. 1, p. 49370, 1 fev. 2018. DisponÌvel em: https://doi.org/10.1007/s13592-017-0548-9.
 
 VOJVODIC et al. The transcriptomic and evolutionary signature of social interactions regulating honey bee caste development. Ecology and Evolution, v.5, n. 21, p. 4795–4807. https://doi.org/10.1002/ece3.1720. 
 
