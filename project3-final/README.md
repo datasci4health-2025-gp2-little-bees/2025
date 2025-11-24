@@ -44,7 +44,7 @@ Em _Apis mellifera_, a diferença entre rainhas e operárias é determinada pela
 
 A diferenciação ocorre ainda no período larval, quando grandes diferenças na expressão gênica se estabelecem entre rainhas e operárias, envolvendo mais de duzentos genes e diversas vias de sinalização sensíveis ao estado nutricional (VOJVODIC et al., 2015). Além disso, alterações epigenéticas, como metilação do DNA e modificações da cromatina, também participam da regulação dos programas de desenvolvimento de cada casta (FORET et al., 2012).
 
-Assim, a formação de rainhas e operárias em _Apis mellifer_a é um processo complexo, determinado pela interação entre fatores nutricionais, genéticos e epigenéticos. Nesse contexto, este trabalho pode contribuir para o estudo dos mecanismos de plasticidade fenotípica e para o avanço do conhecimento sobre a biologia das abelhas, o que é essencial para fortalecer ações de preservação e incentivar programas de manejo e manutenção das espécies, considerando sua grande importância ecológica, econômica e ambiental.
+Assim, a formação de rainhas e operárias em _Apis mellifera_ é um processo complexo, determinado pela interação entre fatores nutricionais, genéticos e epigenéticos. Nesse contexto, este trabalho pode contribuir para o estudo dos mecanismos de plasticidade fenotípica e para o avanço do conhecimento sobre a biologia das abelhas, o que é essencial para fortalecer ações de preservação e incentivar programas de manejo e manutenção das espécies, considerando sua grande importância ecológica, econômica e ambiental.
 
 # Perguntas de Pesquisa
 
