@@ -1,6 +1,7 @@
 # Projeto Redes de Regulação Gênica na Plasticidade Fenotípica de Apis mellifera
-# Project Gene Regulatory Networks in the Phenotypic Plasticity of Apis mellifera
+## Project Gene Regulatory Networks in the Phenotypic Plasticity of Apis mellifera
 
+# Equipe
 > |Nome  | RA | Especialização|
 > |--|--|--|
 > | Arimã Batista  | 194347  | Computação |
@@ -51,33 +52,62 @@ Assim, a formação de rainhas e operárias em Apis mellifera é um processo com
 > Apresente aqui como o projeto ajudou a responder as perguntas de pesquisa.
 
 # Metodologia
-> Proposta de metodologia incluindo especificação de quais as técnicas/métricas de Ciência de Redes que estão sendo usadas no projeto,
-> tais como: detecção de comunidades, análise de centralidade, predição de links, ou a combinação de uma ou mais técnicas. Descreva o que perguntas pretende endereçar com a técnica escolhida.
+
+Este projeto adota uma abordagem baseada em técnicas de Ciência de Redes para analisar a estrutura, dinâmica e padrões emergentes da rede biológica em estudo. A metodologia compreende desde a construção e pré-processamento das redes até a aplicação de métricas específicas. Cada técnica é escolhida para responder a questões específicas relacionadas à organização e funcionalidade dos genes expressos durante o desenvolvimento larval tardio de Apis mellifera, com ênfase na diferenciação entre ovários de operárias e rainhas.
+
+Para identificar os genes expressos exclusivamente nos ovários de operárias nesse estágio, foi desenvolvido um workflow na ferramenta Orange Data Mining, que possibilita o pré-processamento e a integração dos dados genômicos. Complementarmente, utilizaram-se ferramentas especializadas, como DAVID, OrthoDB e KEGG, para análise de enriquecimento funcional dos genes, permitindo identificar processos biológicos relevantes associados aos conjuntos gênicos selecionados.
+
+Com os dados estruturados, a ferramenta Cytoscape foi empregada para a geração e visualização das redes gênicas. A análise combinada dessas redes evidenciou vias metabólicas e proteínas de alto valor funcional, integrando ainda a análise e mineração de textos científicos para melhor compreensão da biologia molecular da espécie.
+
+
 
 ## Bases de Dados e Evolução
 
-> Para cada base, coloque uma entrada na tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+As bases de dados iniciais utilizadas neste estudo foram originadas da tese intitulada "Reconstrução das Redes Cis-Reguladoras do Desenvolvimento de Ovários de Operárias e Rainhas de Abelhas Melíferas", de autoria de Izabella Cristina Silva, e cedidas pelo grupo de pesquisa ()[nome_fornecedor]. Os dados foram disponibilizados em formato de planilhas eletrônicas.
 
-> Base de Dados | Endereço na Web | Resumo descritivo
-> ----- | ----- | -----
-> Título da Base 1 | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
-> Título da Base 2 | http://base2.org/ | Breve resumo (duas ou três linhas) sobre a base.
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
-> * O que descobriu sobre essa base?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+Base de Dados | Fonte | Resumo descritivo
+----- | ----- | -----
+genes_exclusivos_ov_operarias.txt | http://base1.org/ | Lista contendo 3.449 genes exclusivos das operárias, ausentes na expressão ovariana das rainhas.
+int-targets-fts-worker.csv | http://base2.org/ | Breve resumo (duas ou três linhas) sobre a base.
+
+A base *genes_exclusivos_ov_operarias.txt* apresentou uma listagem de 3.449 genes exclusivos das operárias, ou seja, genes ausentes na expressão ovariana das rainhas. Durante a análise, identificou-se que alguns símbolos genéticos possuíam o sufixo “LOC”, o que dificultava a comparação entre bases. Por esse motivo, procedeu-se à remoção desses sufixos para uniformizar os símbolos gênicos entre as bases.
+
+A base *int-targets-fts-worker.csv*, com seus 1.463 registros, apresentou múltiplas entradas para diferentes símbolos genéticos. Cada registro contém o identificador do gene (Gene ID), símbolo (Gene Symbol), motivos (motifs), módulos associados (identificados por meio do pacote WGCNA) e a presença de sítios de ligação para fatores de transcrição (TFBSs), detectados pelos algoritmos HOMER Denovo e HOMER compare.
+
+A partir da lista da base *genes_exclusivos_ov_operarias.txt*, foi realizada a filtragem dos genes exclusivos das operárias presentes na base *int-targets-fts-worker.csv*, resultando na criação de três bases derivadas para análises específicas:
+
+Base de Dados | Fonte | Resumo descritivo
+----- | ----- | -----
+motivos-genes-total.csv | http://base1.org/ | 76 registros estruturados em Genes symbol e motivo (motif).
+motivos-genes.csv | http://base2.org/ | 21 registros com Genes symbol e motivo (motif) com TFBs identificados.
+geneID_david.csv | http://base2.org/ | Lista com 15 Gene IDs para enriquecimento via DAVID.
+
+
 
 ## Modelo Lógico
 
-> Modelo lógico da base de grafos revisado. Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
+O modelo lógico apresentado ilustra o fluxo completo desenvolvido ao longo do estudo, destacando as etapas e ferramentas utilizadas durante o processo.
+
+![Modelo Lógico de Estudo](project3-final/assets/images/modelo-logico-estudo.jpg)
+
+Foram geradas duas redes gênicas distintas: a primeira composta por 76 interações entre genes exclusivos das operárias e seus respectivos motivos (motifs); e a segunda contendo somente as interações para genes em que foi possível identificar fatores de transcrição (TFBs) relacionados.
+
+O modelo lógico apresentado a seguir demonstra como esses dados foram organizados para a construção das redes, estruturadas como grafos direcionados.
+
+Nessa representação, os nós ovais correspondem aos genes (identificados pelo geneID) e aos motivos associados a eles, representados por retângulos. Por meio da ferramenta Cytoscape, esses nós foram enriquecidos com os arquivos estruturados e gerados durante o estudo, otimizando o processo de análise das redes.
+
+![Modelo Lógico de Grafos](project3-final/assets/images/modelo-logico-grafos.jpg)
+
 
 ## Integração entre Bases
 
-> Descreva se houve desafios de integração de fontes de dados e etapas para a mesma.
+A integração das bases de dados neste estudo apresentou diversos desafios, principalmente relacionados à uniformização de nomenclaturas e registros entre as fontes distintas. Para superar essas questões, foram desenvolvidos algoritmos específicos de filtragem, implementados por meio da ferramenta Orange Data Mining, além de processos manuais para identificação e correção de inconsistências nos dados.
+
+O workflow (data-structure.ows) [localização no rep] documenta detalhadamente o processo de estruturação dos dados iniciais, incluindo a identificação dos genes exclusivos das operárias e a organização para a criação das redes gênicas. Este workflow também incorpora os dados provenientes da ferramenta DAVID, utilizados para o enriquecimento funcional da rede gênica.
+
+Adicionalmente, o workflow (paper-analysis.ows) [localização no repo] resume o processo de estruturação e aplicação de técnicas para o reconhecimento de padrões para análise e mineração de texto em artigos científicos. Essa etapa teve o objetivo de validar as descobertas da análise de redes, consolidando os resultados obtidos.
+
 
 ## Análises Realizadas
 
@@ -97,9 +127,14 @@ plt.show();
 
 ## Evolução do Projeto
 
-> Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
-> Podem ser apresentados destaques na evolução do modelo lógico. O modelo inicial e intermediários (quando relevantes) e explicação de refinamentos, mudanças ou evolução do projeto que fundamentaram as decisões.
-> Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
+Inicialmente, o estudo focava exclusivamente na criação de modelos lógicos e no seu enriquecimento por meio de anotações extraídas com a ferramenta DAVID. Contudo, durante o desenvolvimento, verificou-se que alguns genes não foram identificados pela ferramenta, e outros não puderam ser caracterizados adequadamente. Essa limitação no mapeamento e enriquecimento poderia comprometer a abrangência das interações relevantes para as análises.
+
+Para contornar essa dificuldade, foi realizado um mapeamento manual dos ortólogos humanos para os 15 genes de Apis mellifera identificados. A busca desses ortólogos foi efetuada na ferramenta OrthoDB, empregando os gene IDs como parâmetro. Os ortólogos humanos identificados foram posteriormente submetidos à análise na ferramenta KEGG, com o objetivo de identificar as vias biológicas associadas, gerando o arquivo (orthoDB_gene.csv) [localização arquivo repo] para enriquecimento das redes gênicas.
+
+Além disso, foi implementada uma etapa de análise e mineração de textos científicos focada em artigos que abordam a atividade do citocromo P450, uma proteína destacada nos modelos gerados e relacionada à diferenciação de castas e estágios de desenvolvimento em Apis mellifera. Ao todo, oito artigos foram selecionados após análise criteriosa. O workflow (paper-analysis.ows) [localização no repo] sintetiza o processo de estruturação e aplicação das técnicas para reconhecimento de padrões e geração dos resultados.
+
+O objetivo dessa etapa foi estabelecer um paralelo entre o conhecimento presente na literatura científica e as descobertas obtidas pela equipe de pesquisa, fortalecendo a validação dos resultados.
+
 
 # Ferramentas
 
