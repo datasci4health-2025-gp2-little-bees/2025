@@ -2,14 +2,14 @@
 ## Project Gene Regulatory Networks in the Phenotypic Plasticity of _Apis mellifera_
 
 # Equipe
-> |Nome  | RA | Especialização|
-> |--|--|--|
-> | Arimã Batista  | 194347  | Computação |
-> | Diego Monego  | 291074  | Computação |
-> | Jaqueline Aguilar | 298311  | Computação |
-> | Sarah Calado | 29582  | Biologia |
-> | Vitor Klipel | 289610  | Biologia |
-> | Victor Machado| 299880  | Computação |
+|Nome  | RA | Especialização|
+|--|--|--|
+| Arimã Batista  | 194347  | Computação |
+| Diego Monego  | 291074  | Computação |
+| Jaqueline Aguilar | 298311  | Computação |
+| Sarah Calado | 29582  | Biologia |
+| Vitor Klipel | 289610  | Biologia |
+| Victor Machado| 299880  | Computação |
 
 # Apresentação
 
