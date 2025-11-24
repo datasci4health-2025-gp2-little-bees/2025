@@ -58,10 +58,10 @@ Com os dados estruturados, a ferramenta Cytoscape foi empregada para a geração
 
 As bases de dados iniciais utilizadas neste estudo foram originadas da tese intitulada "Reconstrução das Redes Cis-Reguladoras do Desenvolvimento de Ovários de Operárias e Rainhas de Abelhas Melíferas", de autoria de Izabella Cristina Silva, e cedidas pelo grupo de pesquisa (Laboratório de Genômica Comparativa do Desenvolvimento). Os dados foram disponibilizados em formato de planilhas eletrônicas.
 
-Base de Dados | Fonte | Resumo descritivo
------ | ----- | -----
-genes_exclusivos_ov_operarias.txt | http://base1.org/ | Lista contendo 3.449 genes exclusivos das operárias, ausentes na expressão ovariana das rainhas.
-int-targets-fts-worker.csv | http://base2.org/ | Breve resumo (duas ou três linhas) sobre a base.
+Base de Dados | Resumo descritivo
+----- |  -----
+genes_exclusivos_ov_operarias.txt | Lista contendo 3.449 genes exclusivos das operárias, ausentes na expressão ovariana das rainhas.
+int-targets-fts-worker.csv | Breve resumo (duas ou três linhas) sobre a base.
 
 A base *genes_exclusivos_ov_operarias.txt* apresentou uma listagem de 3.449 genes exclusivos das operárias, ou seja, genes ausentes na expressão ovariana das rainhas. Durante a análise, identificou-se que alguns símbolos genéticos possuíam o sufixo “LOC”, o que dificultava a comparação entre bases. Por esse motivo, procedeu-se à remoção desses sufixos para uniformizar os símbolos gênicos entre as bases.
 
@@ -69,11 +69,11 @@ A base *int-targets-fts-worker.csv*, com seus 1.463 registros, apresentou múlti
 
 A partir da lista da base *genes_exclusivos_ov_operarias.txt*, foi realizada a filtragem dos genes exclusivos das operárias presentes na base *int-targets-fts-worker.csv*, resultando na criação de três bases derivadas para análises específicas:
 
-Base de Dados | Fonte | Resumo descritivo
+Base de Dados | Lolização | Resumo descritivo
 ----- | ----- | -----
-motivos-genes-total.csv | http://base1.org/ | 76 registros estruturados em Genes symbol e motivo (motif).
-motivos-genes.csv | http://base2.org/ | 21 registros com Genes symbol e motivo (motif) com TFBs identificados.
-geneID_david.csv | http://base2.org/ | Lista com 15 Gene IDs para enriquecimento via DAVID.
+motivos-genes-total.csv | [2025/project2/](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project2/motivos-genes-total.csv) | 76 registros estruturados em Genes symbol e motivo (motif).
+motivos-genes.csv | [2025/project2/](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project2/motivos-genes.csv) | 21 registros com Genes symbol e motivo (motif) com TFBs identificados.
+geneID_david.csv | [2025/project2/](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project2/geneID_david.csv) | Lista com 15 Gene IDs para enriquecimento via DAVID.
 
 ## Modelo Lógico
 
@@ -93,33 +93,17 @@ Nessa representação, os nós ovais correspondem aos genes (identificados pelo 
 
 A integração das bases de dados neste estudo apresentou diversos desafios, principalmente relacionados à uniformização de nomenclaturas e registros entre as fontes distintas. Para superar essas questões, foram desenvolvidos algoritmos específicos de filtragem, implementados por meio da ferramenta Orange Data Mining, além de processos manuais para identificação e correção de inconsistências nos dados.
 
-O workflow (data-structure.ows) [localização no rep] documenta detalhadamente o processo de estruturação dos dados iniciais, incluindo a identificação dos genes exclusivos das operárias e a organização para a criação das redes gênicas. Este workflow também incorpora os dados provenientes da ferramenta DAVID, utilizados para o enriquecimento funcional da rede gênica.
+O workflow [data-structure.ows](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project2/data-structure.ows) documenta detalhadamente o processo de estruturação dos dados iniciais, incluindo a identificação dos genes exclusivos das operárias e a organização para a criação das redes gênicas. Este workflow também incorpora os dados provenientes da ferramenta DAVID, utilizados para o enriquecimento funcional da rede gênica.
 
-Adicionalmente, o workflow (paper-analysis.ows) [localização no repo] resume o processo de estruturação e aplicação de técnicas para o reconhecimento de padrões para análise e mineração de texto em artigos científicos. Essa etapa teve o objetivo de validar as descobertas da análise de redes, consolidando os resultados obtidos.
+Adicionalmente, o workflow [paper-analysis.ows](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/pipelines/workflows/paper-analysis.ows) resume o processo de estruturação e aplicação de técnicas para o reconhecimento de padrões para análise e mineração de texto em artigos científicos. Essa etapa teve o objetivo de validar as descobertas da análise de redes, consolidando os resultados obtidos.
 
-## Análises Realizadas
-
-> Apresente aqui uma análise dos dados.
-> Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
->
-> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
->
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
-
-~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
-~~~
-
-## Evolução do Projeto
+## Análises Realizadas e Evolução do Projeto
 
 Inicialmente, o estudo focava exclusivamente na criação de modelos lógicos e no seu enriquecimento por meio de anotações extraídas com a ferramenta DAVID. Contudo, durante o desenvolvimento, verificou-se que alguns genes não foram identificados pela ferramenta, e outros não puderam ser caracterizados adequadamente. Essa limitação no mapeamento e enriquecimento poderia comprometer a abrangência das interações relevantes para as análises.
 
-Para contornar essa dificuldade, foi realizado um mapeamento manual dos ortólogos humanos para os 15 genes de _Apis mellifera_ identificados. A busca desses ortólogos foi efetuada na ferramenta OrthoDB, empregando os gene IDs como parâmetro. Os ortólogos humanos identificados foram posteriormente submetidos à análise na ferramenta KEGG, com o objetivo de identificar as vias biológicas associadas, gerando o arquivo (orthoDB_gene.csv) [localização arquivo repo] para enriquecimento das redes gênicas.
+Para contornar essa dificuldade, foi realizado um mapeamento manual dos ortólogos humanos para os 15 genes de _Apis mellifera_ identificados. A busca desses ortólogos foi efetuada na ferramenta OrthoDB, empregando os gene IDs como parâmetro. Os ortólogos humanos identificados foram posteriormente submetidos à análise na ferramenta KEGG, com o objetivo de identificar as vias biológicas associadas, gerando o arquivo [orthoDB_gene.csv](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project2/orthoDB_gene.csv) para enriquecimento das redes gênicas.
 
-Além disso, foi implementada uma etapa de análise e mineração de textos científicos focada em artigos que abordam a atividade do citocromo P450, uma proteína destacada nos modelos gerados e relacionada à diferenciação de castas e estágios de desenvolvimento em _Apis mellifera_. Ao todo, oito artigos foram selecionados após análise criteriosa. O workflow (paper-analysis.ows) [localização no repo] sintetiza o processo de estruturação e aplicação das técnicas para reconhecimento de padrões e geração dos resultados.
+Além disso, foi implementada uma etapa de análise e mineração de textos científicos focada em artigos que abordam a atividade do citocromo P450, uma proteína destacada nos modelos gerados e relacionada à diferenciação de castas e estágios de desenvolvimento em _Apis mellifera_. Ao todo, oito artigos foram selecionados após análise criteriosa. O workflow [paper-analysis.ows](https://github.com/datasci4health-2025-gp2-little-bees/2025/blob/main/project3-final/pipelines/workflows/paper-analysis.ows) sintetiza o processo de estruturação e aplicação das técnicas para reconhecimento de padrões e geração dos resultados.
 
 O objetivo dessa etapa foi estabelecer um paralelo entre o conhecimento presente na literatura científica e as descobertas obtidas pela equipe de pesquisa, fortalecendo a validação dos resultados.
 
