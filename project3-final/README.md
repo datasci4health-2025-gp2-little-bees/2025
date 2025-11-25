@@ -132,16 +132,15 @@ O citocromo P450 diz respeito à uma família de enzimas responsáveis por metab
 
 # Conclusão
 
-> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
->
-> Destacar os principais desafios enfrentados.
->
-> Principais lições aprendidas.
+O projeto evidenciou a complexidade dos mecanismos envolvidos na diferenciação entre rainhas e operárias de Apis mellifera, destacando o papel central da regulação gênica e da plasticidade celular nesse processo. A análise inicial identificou aproximadamente 3.500 genes expressos exclusivamente nos ovários de operárias, reforçando que, apesar de geralmente estéreis, essas possuem um potencial genético latente para ativação ovariana em condições específicas. Esse achado reforça a plasticidade fenotípica da espécie e contribui para a compreensão dos mecanismos que sustentam sua organização social.
+
+As análises conduzidas — incluindo coexpressão gênica via WGCNA, detecção de motivos regulatórios com HOMER e integração com dados de ortologia — permitiram identificar módulos funcionais, genes-hub e fatores de transcrição potencialmente essenciais para a regulação da função ovariana. Entre os resultados de maior destaque, encontram-se os genes da família citocromo P450, associados tanto à detoxificação quanto à modulação hormonal e à ativação das gônadas, além do papel da quercetina na resposta das operárias ao feromônio da rainha. Esses elementos reforçam que a diferenciação de castas resulta de uma rede integrada de interações gênicas, hormonais e ambientais.
+
+Durante o desenvolvimento do projeto, desafios relevantes envolveram a integração de bases heterogêneas, a padronização de símbolos gênicos e a limitação de anotações funcionais disponíveis para _Apis mellifera_. Apesar disso, o trabalho permitiu consolidar um fluxo metodológico robusto que combinou redes biológicas, enriquecimento funcional e mineração de textos científicos. Entre as lições aprendidas, destacam-se a importância da curadoria manual em análises ômicas, o valor de múltiplas fontes para validação de resultados e a necessidade de integrar dados biológicos e computacionais para interpretações mais completas.
 
 # Trabalhos Futuros
 
-> O que poderia ser melhorado se houvesse mais tempo?
-> Quais possíveis desdobramentos este projeto pode ter?
+Com mais tempo e recursos, o projeto poderia ser expandido em diferentes direções. Uma possibilidade é ampliar a rede de interações gênicas utilizando ferramentas especializadas, como STRING, para incorporar relações proteína–proteína que não estão presentes nas bases atuais. Da mesma forma, análises comparativas mais profundas com ortólogos humanos e de outras espécies sociais poderiam fortalecer a interpretação evolutiva dos mecanismos associados à plasticidade celular e à socialidade em abelhas.
 
 # Referências Bibliográficas
 
